@@ -2,7 +2,7 @@
 __author__ = 'peter.liang'
 
 ##############################################################################
-# this script is to detect WebView Component Vulnerability in Android APP. test for centosaa
+# this script is to detect WebView Component Vulnerability in Android APP. test for win
 ###############################################################################
 
 import os
