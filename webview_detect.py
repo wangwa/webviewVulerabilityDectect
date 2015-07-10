@@ -1,10 +1,8 @@
-
-
 # -*- coding: utf-8 -*-
 __author__ = 'peter.liang'
 
 ##############################################################################
-# this script is to detect WebView Component Vulnerability in Android APP.
+# this script is to detect WebView Component Vulnerability in Android APP. test for centos
 ###############################################################################
 
 import os
