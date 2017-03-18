@@ -1,6 +1,6 @@
 FROM centos
 
-apppath=/srv/wangwa
+ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
 COPY ./ ${apppath}
