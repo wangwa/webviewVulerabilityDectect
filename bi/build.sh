@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "start build module bi.."
+echo "start to build module bi.."
 
 
-echo "end build module bi.."
+echo "end to build module bi.."
