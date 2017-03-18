@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "start focus services."
+echo "start wangwa services."
 
 filepath=`dirname $0`
 cd ${filepath}
 echo "current path ${filepath}"
 sh ./bi/service_ctl.sh start
 
-echo "end focus services."
+echo "end wangwa services."
