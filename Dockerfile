@@ -3,7 +3,8 @@ FROM centos
 ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
-RUN yum install supervisor
+RUN yum install -y python-devel libevent-devel python-pip gcc
+RUN pip install supervisor
 
 COPY ./ ${apppath}
 
