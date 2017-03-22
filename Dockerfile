@@ -3,10 +3,8 @@ FROM centos
 ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
-RUN curl https://bootstrap.pypa.io/get-pip.py
-RUN ls -l /etc/yum.repos.d/
-RUN rm -rf /etc/yum.repos.d/*
-COPY /etc/yum.repos.d/* /etc/yum.repos.d/
+RUN curl https://bootstrap.pypa.io/get-pip.py| sudo python2.7
+
 RUN yum install -y python-devel libevent-devel python-pip gcc
 RUN pip install supervisor
 
