@@ -3,10 +3,13 @@ FROM centos
 ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
-RUN curl https://bootstrap.pypa.io/get-pip.py| sudo python2.7
-
+RUN yum -y install epel-release
 RUN yum install -y python-devel libevent-devel python-pip gcc
-RUN pip install supervisor
+RUN yum install -y supervisor
+
+RUN mkdir /srv/supervisord.d/ -p
+
+RUN sed -i 's/files =/&\/srv\/supervisord.d\/*.conf,/g' /etc/supervisord.conf
 
 COPY ./ ${apppath}
 
