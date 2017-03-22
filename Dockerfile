@@ -4,7 +4,7 @@ ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
 RUN curl https://bootstrap.pypa.io/get-pip.py
-RUN ll /etc/yum.repos.d/
+RUN ls -l /etc/yum.repos.d/
 RUN yum install -y python-devel libevent-devel python-pip gcc
 RUN pip install supervisor
 
