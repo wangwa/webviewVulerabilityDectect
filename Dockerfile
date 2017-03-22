@@ -3,6 +3,8 @@ FROM centos
 ENV apppath /srv/wangwa
 RUN mkdir ${apppath}
 
+RUN yum install supervisor
+
 COPY ./ ${apppath}
 
 RUN chmod +x ${apppath}/bi/build.sh
