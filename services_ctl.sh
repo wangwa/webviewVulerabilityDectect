@@ -8,3 +8,5 @@ echo "current path ${filepath}"
 sh ./bi/service_ctl.sh start
 
 echo "end wangwa services."
+
+#mod by peter
