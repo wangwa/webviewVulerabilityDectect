@@ -18,3 +18,5 @@ chmod +x services_ctl.sh
 docker build -t openscanner/wangwa:${FOCUS_VERSION} .
 
 cd -
+
+#mod by peter
