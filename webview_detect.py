@@ -3,7 +3,7 @@ __author__ = 'peter.liang'
 
 ##############################################################################
 # this script is to detect WebView Component Vulnerability in Android APP. test for win pycharm
-#modify 
+#modify by peter
 ###############################################################################
 
 import os
